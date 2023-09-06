@@ -230,7 +230,7 @@ $id_lanjut = $cari['id_terakhir'] + 1;
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
-                                        <label for="email">Jumlah Kapasitas (lpm)</label>
+                                        <label for="email">Jumlah Kapasitas(lpm)</label>
                                         <input type="number" class="form-control" id="email" name="kapasitas" placeholder="Jumlah Kapasitas" required="">
                                    </div>
                                    <div class="col-md-6 col-sm-6">
