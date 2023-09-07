@@ -45,9 +45,9 @@
                                             <th>Nama</th>
                                             <th>Email</th>
                                             <th>Pesan</th>
-                                            <th>Point Kebersihan</th>
+                                            <th>Point Komunikasi</th>
                                             <th>Point Keramahan</th>
-                                            <th>Point Ketelitian</th>
+                                            <th>Point Kualitas Layanan</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -60,9 +60,9 @@
                                             <td><?= $data['nama'];?></td>
                                             <td><?= $data['email'];?></td>
                                             <td><?= $data['pesan'];?></td>
-                                            <td><?= $data['kebersihan'];?></td>
+                                            <td><?= $data['komunikasi'];?></td>
                                             <td><?= $data['keramahan'];?></td>
-                                            <td><?= $data['ketelitian'];?></td>
+                                            <td><?= $data['kualitas'];?></td>
                                             
                                         </tr>
 <?php

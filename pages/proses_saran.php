@@ -4,11 +4,11 @@ require "../config/koneksi.php";
 $nama=$_POST['nama'];
 $email=$_POST['email'];
 $pesan= $_POST['pesan'];
-$kebersihan=$_POST['kebersihan'];
+$komunikasi=$_POST['komunikasi'];
 $keramahan=$_POST['keramahan'];
 $ketelitian=$_POST['ketelitian'];
 
-$query = "insert into saran(id_saran, nama, email, pesan, kebersihan, keramahan, ketelitian) values(NULL,'$nama', '$email', '$pesan', '$kebersihan', '$keramahan', '$ketelitian')" ;
+$query = "insert into saran(id_saran, nama, email, pesan, komunikasi, keramahan, ketelitian) values(NULL,'$nama', '$email', '$pesan', '$komunikasi', '$keramahan', '$ketelitian')" ;
 $hasil = mysql_query($query);
 
 //see the result

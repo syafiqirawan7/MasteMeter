@@ -72,7 +72,7 @@ $tgl_akhir = $_GET['tgl_akhir'];
                                         <tr>
                                             <td><?= $nomor++;?></td>
                                             <td><?= $data['no_antrian'];?></td>
-                                            <td><?= $data['jam_pendaftaran'];?></td>
+                                            <td><?= $data['tgl_pengujian'];?></td>
                                             <td><?= $data['nama'];?></td>
                                             <td><?= $data['nomor_plat'];?></td>
                                             <td><?= $data['jenis_cucian'];?></td>

@@ -51,7 +51,7 @@ date_default_timezone_set('Asia/Jakarta');
                         <a href="index.php?p=pendaftaran"> <i class="menu-icon ti-clipboard"></i>Pendaftaran </a>
                     </li>
                     <li>
-                        <a href="index.php?p=transaksi"> <i class="menu-icon ti-receipt"></i>Transaksi </a>
+                        <a href="index.php?p=antrian"> <i class="menu-icon ti-receipt"></i>Antrian </a>
                     </li>
                     <li>
                         <a href="index.php?p=customer"> <i class="menu-icon ti-id-badge"></i>Customer </a>

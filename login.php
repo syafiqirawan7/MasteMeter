@@ -14,7 +14,7 @@
 			<div class="logo">
 				<span style="color:rgba(255,255,255,.4);">Login Admin</span>
 				<h1 style="font-size:32pt;letter-spacing:-3px;"><span style="color:#a5c422
-"> Hugo </span> Car Wash</h1>
+"> Direktorat </span>Metrologi Bandung</h1>
 
 			</div>
 			<div class="form">

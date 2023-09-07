@@ -4,7 +4,7 @@
   <?php
 $id_pendaftaran = $_GET['id_pendaftaran']; //get the no which will updated
 
-$queryy = mysql_query("SELECT * FROM pendaftaran join customer using(id_customer) join jenis_cucian using (id_jenis_cucian) WHERE id_pendaftaran = '$id_pendaftaran'"); //get the data that will be updated
+$queryy = mysql_query("SELECT * FROM pendaftaran join customer using(id_customer) WHERE id_pendaftaran = '$id_pendaftaran'"); //get the data that will be updated
 $dt=mysql_fetch_array($queryy);
 
 $id_user = $_SESSION['id_user']; 
@@ -65,25 +65,19 @@ $id_user = $_SESSION['id_user'];
                                     </div>
 
                                     <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">No. Plat</label></div>
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Serial Number</label></div>
                                         <div class="col-12 col-md-9">
-                                            <input type="text" id="text-input" name="nomor_plat" placeholder="Text" class="form-control" value="<?= $dt['nomor_plat'];?>" readonly>
+                                            <input type="text" id="text-input" name="serialnumber" placeholder="Text" class="form-control" value="<?= $dt['serialnumber'];?>" readonly>
                                         </div>
                                     </div>
 
                                     <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Type Mobil</label></div>
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Merk/Type</label></div>
                                         <div class="col-12 col-md-9">
-                                            <input type="text" id="text-input" name="type_mobil" placeholder="Text" class="form-control" value="<?= $dt['type_mobil'];?>" readonly>
+                                            <input type="text" id="text-input" name="merk" placeholder="Text" class="form-control" value="<?= $dt['merk'];?>" readonly>
                                         </div>
                                     </div>
 
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Jenis Cucian</label></div>
-                                        <div class="col-12 col-md-9">
-                                            <input type="text" id="text-input" name="jenis_cucian" placeholder="Text" class="form-control" value="<?= $dt['jenis_cucian'];?>" readonly>
-                                        </div>
-                                    </div>
 
                                     <div class="row form-group">
                                         <div class="col col-md-3"><label for="email-input" class=" form-control-label">No. Nota</label></div>
@@ -112,37 +106,23 @@ $id_user = $_SESSION['id_user'];
                                         </div>
                                     </div>
                                     <div class="row form-group">
-                                        <div class="col col-md-3"><label for="email-input" class=" form-control-label">Tanggal Pembayaran</label></div>
+                                        <div class="col col-md-3"><label for="email-input" class=" form-control-label">Tanggal Pengujian Selesai</label></div>
                                         <div class="col-12 col-md-9">
                                             <input type="date" id="email-input" name="tanggal" value="<?= date("Y-m-d");?>" class="form-control" readonly>
                                         </div>
                                     </div>
 
                                     <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Total Biaya</label></div>
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Penanggungjawab</label></div>
                                         <div class="col-12 col-md-9">
-                                            <input type="text" name="total" id="txt2"  onkeyup="sum();" class="form-control" value="<?= $dt['total_biaya'];?>" readonly>
+                                            <input type="text" name="penanggungjawab" class="form-control"required="">
                                         </div>
                                     </div>
 
                                     <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Uang Yang Dibayarkan</label></div>
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Konfirmasi Selesai</label></div>
                                         <div class="col-12 col-md-9">
-                                            <input type="text" id="txt1"  onkeyup="sum();" name="bayar" class="form-control" required="">
-                                        </div>
-                                    </div>
-
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Kembalian</label></div>
-                                        <div class="col-12 col-md-9">
-                                            <input type="text" name="kembali" class="form-control" required="" readonly="" id="txt3"  onkeyup="sum();">
-                                        </div>
-                                    </div>
-
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Penanggung Jawab Cuci</label></div>
-                                        <div class="col-12 col-md-9">
-                                            <input type="text" name="nama_pencuci" class="form-control" required="">
+                                            <input type="text" name="konfirmasi" class="form-control" placeholder="Ketik SELESAI" required="">
                                         </div>
                                     </div>
                                     

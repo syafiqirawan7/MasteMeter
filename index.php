@@ -59,7 +59,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-8 col-sm-7 text-align-right">
                          <span class="phone-icon"><i class="fa fa-phone"></i> 081223445667</span>
-                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 08.00 - 17:00 (Senin-Jumat)</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 08.30 - 15:30 (Senin-Kamis)</span>
                     </div>
 
                </div>
@@ -81,15 +81,14 @@ http://www.tooplate.com/view/2098-health
                     <!-- lOGO TEXT HERE -->
                     
                     <a href="index.html" class="navbar-brand">
-                         <img src="images/logo1.png"  style="float:left" width="40" height="40">Direktorat Metrologi Bandung</a>
+                    <img src="images/logo1.png"  style="float:left;margin:-15px 20px" width="50" height="50">Direktorat Metrologi Bandung</a>
                     
                     </div>
 
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#home" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">Tentang Kami</a></li>
+                         <li><a href="#about" class="smoothScroll">Home</a></li>
                          <li><a href="#appointment" class="smoothScroll">Pendaftaran</a></li>
                          <li><a href="#saran" class="smoothScroll">Kritik dan Saran</a></li>
                          <li class="appointment-btn"><a href="login.php">Login Admin</a></li>
@@ -100,79 +99,20 @@ http://www.tooplate.com/view/2098-health
      </section>
 
 
-     <!-- HOME -->
-     <section id="home" class="slider" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
-
-                         <div class="owl-carousel owl-theme">
-                              <div class="item item-first">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Percayakan Noda Kendaraan Bersama Kami</h3>
-                                             <h1>Hugo - Car Wash</h1>
-                                             <a href="#about" class="section-btn btn btn-default smoothScroll">Tentang Kami</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-second">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Direktorat Metrologi Bandung</h3>
-                                             <h1>Master Meter</h1>
-                                             <a href="#appointment" class="section-btn btn btn-default btn-gray smoothScroll">Daftar Sekarang</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-third">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Dan Berikan Masukan Kepada Kami</h3>
-                                             <h1>Kepuasan Anda Adalah Semangat Kami</h1>
-                                             <a href="#saran" class="section-btn btn btn-default btn-blue smoothScroll">Kirim Saran</a>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-
-               </div>
-          </div>
-     </section>
+     
 
 
      <!-- ABOUT -->
      <section id="about">
           <div class="container">
                <div class="row">
-
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
                               <h2 class="wow fadeInUp" data-wow-delay="0.6s">Tentang Kami</h2>
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
                                    <p>Deskripsi perusahaan/kegiatan</p>
                               </div>
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h3>Dijamin Bersih</h3>
-                                   </figcaption>
-                              </figure>
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h3>Dijamin Kilat</h3>
-                                   </figcaption>
-                              </figure>
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h3>Dijamin Wangi</h3>
-                                   </figcaption>
-                              </figure>
-                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <figcaption>
-                                        <h3>Dijamin Puas</h3>
-                                   </figcaption>
-                              </figure>
+                              
                          </div>
                     </div>
 
@@ -202,8 +142,6 @@ $id_lanjut = $cari['id_terakhir'] + 1;
           <div class="container">
                <div class="row">
 
-
-
                     <div class="col-md-12 col-sm-12">
                          <!-- CONTACT FORM HERE -->
                          <form id="appointment-form" role="form" method="post" action="pages/proses_pendaftaran.php">
@@ -215,13 +153,13 @@ $id_lanjut = $cari['id_terakhir'] + 1;
 
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
                                    <div class="col-md-6 col-sm-6">
-                                        <label for="name">Perusahaan Pemiik</label>
+                                        <label for="name">Perusahaan Pemilik</label>
                                         <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Perusahaan" required="">
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
-                                        <label for="email">Merk</label>
-                                        <input type="text" class="form-control" id="email" name="nomor_plat" placeholder="Merk" required="">
+                                        <label for="email">Merk/Type</label>
+                                        <input type="text" class="form-control" id="email" name="merk" placeholder="Merk/Type" required="">
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
@@ -235,9 +173,9 @@ $id_lanjut = $cari['id_terakhir'] + 1;
                                    </div>
                                    <div class="col-md-6 col-sm-6">
                                         <label for="email">Penanggungjawab</label>
-                                        <input type="text" class="form-control" id="email" name="serialnumber" placeholder="Nama Penanggungjawab" required="">
+                                        <input type="text" class="form-control" id="email" name="penanggungjawab" placeholder="Nama Penanggungjawab" required="">
                                    </div>
-                                   </div>
+                                   
 
                                    <div class="col-md-6 col-sm-6">
                                         <label for="email">No. Antrian</label>
@@ -252,15 +190,9 @@ $id_lanjut = $cari['id_terakhir'] + 1;
                                    </div>
                                    <div class="col-md-6 col-sm-6">
                                         <label for="email">Tanggal Rencana Pengujian</label>
-                                        <input type="date" class="form-control" id="email" name="tgl_pendaftaran" value="<?=$tgl_pendaftaran;?>" required="">
+                                        <input type="date" class="form-control" id="email" name="tgl_pengujian" value="<?=$tgl_pengujian;?>" required="">
                                    </div>
                                    
-
-                                   <input type="hidden" name="total_biaya" id="txt2" class="form-control" readonly="" onkeyup="sum();" />
-                                   <script type="text/javascript">
-                                   <?php echo $jsArray; ?>
-                                   </script>
-
                                    <div class="col-md-12 col-sm-12">
                                         <button type="submit" class="form-control" id="cf-submit" name="submit">Daftar Sekarang</button>
                                    </div>
@@ -278,8 +210,6 @@ $id_lanjut = $cari['id_terakhir'] + 1;
      <section id="saran">
           <div class="container">
                <div class="row">
-
-
 
                     <div class="col-md-12 col-sm-12">
                          <!-- CONTACT FORM HERE -->
@@ -307,8 +237,8 @@ $id_lanjut = $cari['id_terakhir'] + 1;
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
-                                        <label for="email">Kebersihan</label>
-                                        <input type="number" class="form-control" id="email" name="kebersihan" placeholder="Nilai Point Kebersihan" maxlength="3" required="">
+                                        <label for="email">Komunikasi</label>
+                                        <input type="number" class="form-control" id="email" name="komunikasi" placeholder="Nilai Point Komunikasi" maxlength="3" required="">
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
@@ -347,9 +277,9 @@ $id_lanjut = $cari['id_terakhir'] + 1;
                               <p>Untuk mengetahui informasi lebih lanjut, silahkan kunjungi kami atau hubungi kontak berikut.</p>
 
                               <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> 081223445667</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
-                                   <p><i class="fa fa-map-marker"></i> Jl. Pasteur No.27, RT.02, Pasir Kaliki, Kec. Cicendo, Kota Bandung, Jawa Barat 40171</p>
+                                   <p><i class="fa fa-phone"></i> 08112233445567</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#"> info@company.com</a></p>
+                                   <p><i class="fa fa-map-marker"></i> <a href='https://goo.gl/maps/FFtUydKR7jv1iW9b8' target="_blank">Jl. Pasteur No.27, RT.02, Pasir Kaliki, Kec. Cicendo, Kota Bandung, Jawa Barat 40171</a></p>
                               </div>
                          </div>
                     </div>
@@ -362,7 +292,8 @@ $id_lanjut = $cari['id_terakhir'] + 1;
                          <div class="footer-thumb">
                               <div class="opening-hours">
                                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Waktu Operasional</h4>
-                                   <p>Senin - Jumat <span>08:00 - 17:00</span></p>
+                                   <p>Senin - Kamis :<span>08.30 - 15.30</span></p>
+                                   <p>Jum'at :<span>08.30 - 16.00</span></p>
                               </div>
                          </div>
                     </div>

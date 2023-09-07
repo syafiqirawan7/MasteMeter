@@ -100,13 +100,13 @@ $tgl_awal = $_POST['tgl_awal'];
                                                 <form action="index.php?p=ganti_status" method="POST">
                                                     <input type="hidden" name="id_pendaftaran" value="<?php echo $data['id_pendaftaran'];?>">
                                                      <?php
-                                                        if($data['status']=='Lunas'){
+                                                        if($data['status']=='Selesai'){
                                                     ?>
                                                     Lunas
                                                 <?php } else { ?>
                                                     <select name="status" onchange="this.form.submit();" class="form-control">
                                                       <option value="Pendaftaran" <?php if($data['status'] == 'Pendaftaran') { echo 'selected'; } ?>>Pendaftaran</option> 
-                                                      <option value="Dalam Pengerjaan" <?php if($data['status'] == 'Dalam Pengerjaan') { echo 'selected'; } ?>>Dalam Pengerjaan</option>
+                                                      <option value="Dalam Antrian" <?php if($data['status'] == 'Dalam Antrian') { echo 'selected'; } ?>>Dalam Antrian</option>
                                                       <option value="Batal" <?php if($data['status'] == 'Batal') { echo 'selected'; } ?>>Batal</option>
                                                     </select>
                                                 <?php } ?>
@@ -114,13 +114,13 @@ $tgl_awal = $_POST['tgl_awal'];
                                             </td>
                                             <td align="center">
                                                 <?php
-                                                        if($data['status']!='Lunas'){
+                                                        if($data['status']!='Selesai'){
                                                     ?>
-                                                <a href="index.php?p=tambah_pembayaran&id_pendaftaran=<?php echo $data['id_pendaftaran']; ?>" class="btn btn-success mb-3"> <i class="fa fa-fw fa-dollar" style="color: white"></i> <font color="white">Bayar</font>
+                                                <a href="index.php?p=tambah_pembayaran&id_pendaftaran=<?php echo $data['id_pendaftaran']; ?>" class="btn btn-success mb-3"> <font color="white">Selesai</font>
                                                 </a>
                                                 <?php }else{ ?>
 
-                                                    LUNAS
+                                                    SELESAI
                                                 <?php } ?>
                                             </td>
                                         </tr>
