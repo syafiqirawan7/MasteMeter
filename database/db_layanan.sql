@@ -121,7 +121,7 @@ CREATE TABLE `saran` (
   `nama` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,
   `pesan` varchar(150) NOT NULL,
-  `kebersihan` int(3) NOT NULL,
+  `komunikasi` int(3) NOT NULL,
   `keramahan` int(3) NOT NULL,
   `ketelitian` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -130,7 +130,7 @@ CREATE TABLE `saran` (
 -- Dumping data for table `saran`
 --
 
-INSERT INTO `saran` (`id_saran`, `nama`, `email`, `pesan`, `kebersihan`, `keramahan`, `ketelitian`) VALUES
+INSERT INTO `saran` (`id_saran`, `nama`, `email`, `pesan`, `komunikasi`, `keramahan`, `ketelitian`) VALUES
 (1, 'Adit', 'aditwijaya@gmail.com', 'Pelayanannya sangat baik dan memuaskan', 90, 80, 90),
 (2, 'erdiman', 'erdiman@gmail.com', 'sangat puas', 90, 90, 90);
 
